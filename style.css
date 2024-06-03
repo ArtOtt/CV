@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+::selection {
+  background-color: blueviolet;
+  color: antiquewhite;
+}
 body {
   margin: 0;
   font-family: "Average Sans", sans-serif;
@@ -12,17 +16,63 @@ h4 {
   font-family: "Open Sans", sans-serif;
 }
 
-header,
-ul,
-.skills,
-.contact {
+header {
   padding: 18px;
+}
+nav {
+  margin-top: 48px;
+}
+#experience h2::before {
+  content: "🧰";
+  margin-right: 12px;
+}
+#skills h2::before {
+  content: "🛠️";
+  margin-right: 12px;
+}
+#contact h2::before {
+  content: "✉️";
+  margin-right: 12px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  color: red;
+}
+a {
+  margin-left: 45px;
+}
+#profile-text::first-letter {
+  font-size: 200%;
 }
 main {
   padding: 18px;
 
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* #profile-text {
+  font-size: 18px;
+}
+*/
+
+article {
+  margin: 60px;
+  border-bottom: 2px grey solid;
+}
+#contact {
+  border: none;
+}
+
+section + section {
+  margin-top: 24px;
 }
 .banner {
   text-align: center;
@@ -32,6 +82,6 @@ main {
 p {
   padding-left: 16px;
 }
-li {
-  padding: 9px;
+li + li {
+  margin-top: 9px;
 }
