@@ -1,4 +1,4 @@
-* {
+html {
   box-sizing: border-box;
 }
 ::selection {
@@ -15,7 +15,11 @@ h3,
 h4 {
   font-family: "Open Sans", sans-serif;
 }
-
+.banner {
+  text-align: center;
+  background-color: Lavender;
+  padding: 60px;
+}
 header {
   padding: 18px;
 }
@@ -74,14 +78,17 @@ article {
 section + section {
   margin-top: 24px;
 }
-.banner {
-  text-align: center;
-  background-color: Lavender;
-  padding: 60px;
-}
+
 p {
   padding-left: 16px;
 }
 li + li {
-  margin-top: 9px;
+  margin-top: 18px;
+}
+
+.experience-header {
+  display: inline;
+}
+.experience-subheader {
+  display: inline;
 }
