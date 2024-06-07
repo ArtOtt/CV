@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 10px;
 }
 ::selection {
   background-color: blueviolet;
@@ -13,19 +14,20 @@ h1,
 h2,
 h3,
 h4 {
+  margin: 0;
   font-family: "Open Sans", sans-serif;
 }
 .banner {
   text-align: center;
   background-color: Lavender;
-  padding: 60px;
+  padding: 80px;
 }
 header {
-  padding: 18px;
+  padding: 1.8rem;
 }
 nav {
-  margin-top: 48px;
 }
+/*
 #experience h2::before {
   content: "🧰";
   margin-right: 12px;
@@ -38,10 +40,14 @@ nav {
   content: "✉️";
   margin-right: 12px;
 }
+*/
 
 a {
+  margin: 0;
   color: black;
   text-decoration: none;
+  font-size: 1.8rem;
+  border-bottom: 0.3rem blanchedalmond solid;
 }
 a:hover {
   color: blue;
@@ -49,17 +55,17 @@ a:hover {
 a:active {
   color: red;
 }
-a {
-  margin-left: 45px;
+a + a {
+  margin-left: 4.5rem;
 }
 #profile-text::first-letter {
   font-size: 200%;
 }
 main {
-  padding: 18px;
-
-  max-width: 800px;
+  padding: 0 11.8rem;
+  max-width: 80rem;
   margin: 0 auto;
+  max-width: 150ch;
 }
 
 /* #profile-text {
@@ -68,27 +74,66 @@ main {
 */
 
 article {
-  margin: 60px;
-  border-bottom: 2px grey solid;
+  margin: 1.5rem;
+  padding: 3rem;
+  border-bottom: 0.2rem grey solid;
 }
+
 #contact {
   border: none;
 }
 
 section + section {
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 
 p {
-  padding-left: 16px;
+  padding-left: 1.6rem;
+  font-size: 2rem;
 }
 li + li {
-  margin-top: 18px;
+  margin-top: 1.8rem;
 }
-
+li {
+  font-size: 2rem;
+}
 .experience-header {
   display: inline;
 }
 .experience-subheader {
   display: inline;
 }
+
+h2 {
+  position: relative;
+  left: -1.8rem;
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#hire-me {
+  font-size: 1.8rem;
+  position: absolute;
+  right: 1.8rem;
+  top: 1.8rem;
+  padding: 1.2rem;
+  background-color: black;
+  color: rgb(211, 195, 164);
+  border-radius: 6%;
+}
+
+.header-in-header {
+  font-size: 6rem;
+}
+
+.header-in-header h1 {
+  font-size: 1em;
+  margin-block: 5rem;
+}
+.header-in-header p {
+  font-size: 0.4em;
+}
+
+/* @media */
