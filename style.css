@@ -137,3 +137,40 @@ h3 {
 }
 
 /* @media */
+
+@media screen and (max-width: 786px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 730px) {
+  html {
+    font-size: 8px;
+  }
+  main > * + * {
+    margin-top: 9rem;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+  #hire-me {
+    position: fixed;
+  }
+}
+@media print {
+  #hire-me {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
