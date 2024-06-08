@@ -21,6 +21,7 @@ h4 {
   text-align: center;
   background-color: Lavender;
   padding: 80px;
+  background-image: linear-gradient(235deg, snow, rgb(160, 184, 221));
 }
 header {
   padding: 1.8rem;
@@ -50,7 +51,7 @@ a {
   color: black;
   text-decoration: none;
   font-size: 1.8rem;
-  border-bottom: 0.3rem blanchedalmond solid;
+  border-bottom: 0.2rem black solid;
 }
 a:hover {
   color: blue;
@@ -79,7 +80,7 @@ main {
 article {
   margin: 1.5rem;
   padding: 3rem;
-  border-bottom: 0.2rem grey solid;
+  border-bottom: 0.2rem rgb(160, 184, 221) solid;
 }
 
 #contact {
@@ -95,7 +96,7 @@ p {
   font-size: 2rem;
 }
 li + li {
-  margin-top: 1.8rem;
+  margin-top: 1rem;
 }
 li {
   font-size: 2rem;
@@ -122,9 +123,9 @@ h3 {
   right: 1.8rem;
   top: 1.8rem;
   padding: 1.2rem;
-  background-color: black;
-  color: rgb(211, 195, 164);
-  border-radius: 6%;
+  background-color: rgb(160, 184, 221);
+  color: rgb(0, 0, 0);
+  border-radius: 9%;
 }
 
 .header-in-header {
@@ -137,6 +138,15 @@ h3 {
 }
 .header-in-header p {
   font-size: 0.4em;
+}
+
+footer {
+  height: 9rem;
+  background-image: linear-gradient(25deg, snow, rgb(160, 184, 221));
+  align-content: center;
+}
+footer p {
+  text-align: center;
 }
 
 /* @media */
@@ -152,7 +162,7 @@ h3 {
     margin-left: 0;
   }
   a {
-    padding: 2rem;
+    margin-top: 2.5rem;
   }
   .main-exp-header {
     display: flex;
