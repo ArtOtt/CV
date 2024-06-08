@@ -26,6 +26,9 @@ header {
   padding: 1.8rem;
 }
 nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /*
 #experience h2::before {
@@ -65,7 +68,7 @@ main {
   padding: 0 11.8rem;
   max-width: 80rem;
   margin: 0 auto;
-  max-width: 150ch;
+  max-width: 168ch;
 }
 
 /* #profile-text {
@@ -138,9 +141,26 @@ h3 {
 
 /* @media */
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 729px) {
   html {
     font-size: 7px;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  a + a {
+    margin-left: 0;
+  }
+  a {
+    padding: 2rem;
+  }
+  .main-exp-header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .experience-subheader {
+    padding-left: 0;
   }
 }
 
@@ -151,11 +171,29 @@ h3 {
   main > * + * {
     margin-top: 9rem;
   }
+  nav {
+    display: block;
+    margin-top: 2rem;
+  }
+  .main-exp-header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .experience-subheader {
+    padding-left: 0;
+  }
 }
 
 @media screen and (min-width: 930px) {
   html {
     font-size: 9px;
+  }
+  .main-exp-header {
+    display: inline;
+  }
+  .experience-subheader {
+    padding-left: 1.8rem;
   }
 }
 @media screen and (min-width: 1200px) {
