@@ -36,6 +36,9 @@ nav {
   flex-direction: column;
   align-items: center;
 }
+#profile-text {
+  margin-top: 12rem;
+}
 /*
 #experience h2::before {
   content: "🧰";
@@ -162,6 +165,18 @@ footer {
 footer p {
   text-align: center;
 }
+#hire-me {
+  transform-origin: top right;
+  transition: transform 1.5s;
+}
+.banner:hover #hire-me,
+.header:focus-within .hire-me {
+  transform: scale(1.5);
+  box-shadow: 200px;
+}
+.contact-info {
+  margin-top: 12rem;
+}
 
 /* @media */
 
@@ -201,11 +216,29 @@ footer p {
   }
   .main-exp-header {
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
   }
   .experience-subheader {
     padding-left: 0;
+  }
+  article {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+  }
+  .main-article-content {
+    margin-top: 10rem;
+  }
+  main {
+    max-width: 210ch;
+  }
+  .main > * + * {
+    margin-top: 8rem;
+  }
+  .main-article-heading {
+    position: relative;
+    left: -6rem;
   }
 }
 
@@ -214,7 +247,7 @@ footer p {
     font-size: 9px;
   }
   .main-exp-header {
-    display: inline;
+    _display: inline;
   }
   .experience-subheader {
     padding-left: 1.8rem;
